@@ -39,7 +39,7 @@ function multiply(a, b) {
     return a * b
 }
 
-// Naya tarika - arrow function:
+// Naya tarika - ARROW FUNCTION:
 const multiplyArrow = (a, b) => {return a * b}
 
 // one liner version:
