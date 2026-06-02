@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+  body {
+    background-image: url('https://i.pinimg.com/1200x/98/6b/3c/986b3cfda38c2fc963f23b70a0a1f12f.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+    <title>My Todo List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" min-h-screen flex items-center justify-center">
+    <div class="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md">
+        <h1 class="text-3xl font-bold text-center text-stone-600 mb-6">My Todo List</h1>
+        <div class="flex gap-2 mb-4">
+            <input 
+                type="text" 
+                id="todoInput" 
+                placeholder="What do you plan to do next?"
+                class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-purple-400"
+            >
+            <button 
+                id="addBtn"
+                class="bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700"
+            >Add</button>
+        </div>
+        <ul id="todoList" class="flex flex-col gap-2"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
